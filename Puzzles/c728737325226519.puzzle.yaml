@@ -1,0 +1,86 @@
+Name: Solar Vapor
+ID: c728737325226519
+Author: 'Warden, I.'
+Inputs:
+- Molecule:
+    Atoms:
+    - AtomType: salt
+      Position:
+        Pos: -1,1
+    - AtomType: salt
+      Position:
+        Pos: 0,-1
+    - AtomType: water
+      Position:
+        Pos: 0,0
+    - AtomType: fire
+      Position:
+        Pos: 1,0
+    Bonds:
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,-1
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,1
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    Name: Alcohol
+  AmountOverride: 0
+Outputs:
+- Molecule:
+    Atoms:
+    - AtomType: fire
+      Position:
+        Pos: 0,0
+    - AtomType: fire
+      Position:
+        Pos: 1,0
+    - AtomType: air
+      Position:
+        Pos: 0,1
+    - AtomType: UncommonPrimes:lux
+      Position:
+        Pos: 1,-1
+    Bonds:
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,0
+      BondTypes:
+      - triplex_0
+      - triplex_1
+      - triplex_2
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 0,1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 1,-1
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    Name: Solar Vapor
+  AmountOverride: 0
+OutputMultiplier: 1
+PermissionFlags: PrismaBonder, CoreTools
+CustomPermissions:
+- extransmutations-induction
+- extransmutations-compaction
+- 'UncommonPrimes: Similarity'
+- extransmutations-cardinal-inversion
+Highlights: []
+ProductionInfo: 
