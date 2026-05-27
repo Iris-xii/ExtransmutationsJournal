@@ -1,0 +1,124 @@
+Name: Harmonious Brass
+ID: caa-j1-harmonious-brass
+Author: 'Soria, V.'
+Inputs:
+- Molecule:
+    Atoms:
+    - AtomType: HalvingMetallurgy:zinc
+      Position:
+        Pos: 0,0
+    Bonds: []
+    Name: Elemental Zinc
+  AmountOverride: 0
+- Molecule:
+    Atoms:
+    - AtomType: HalvingMetallurgy:quickcopper
+      Position:
+        Pos: 0,0
+    Bonds: []
+    Name: Elemental Quickcopper
+  AmountOverride: 0
+- Molecule:
+    Atoms:
+    - AtomType: salt
+      Position:
+        Pos: 0,0
+    Bonds: []
+    Name: Elemental Salt
+  AmountOverride: 0
+Outputs:
+- Molecule:
+    Atoms:
+    - AtomType: HalvingMetallurgy:zinc
+      Position:
+        Pos: 0,0
+    - AtomType: copper
+      Position:
+        Pos: -1,2
+    - AtomType: air
+      Position:
+        Pos: 0,1
+    - AtomType: copper
+      Position:
+        Pos: 1,1
+    - AtomType: salt
+      Position:
+        Pos: 1,0
+    - AtomType: salt
+      Position:
+        Pos: 0,2
+    - AtomType: salt
+      Position:
+        Pos: -1,1
+    Bonds:
+    - A:
+        Pos: -1,2
+      B:
+        Pos: 0,1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 0,1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,1
+      B:
+        Pos: 1,1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 1,0
+      B:
+        Pos: 1,1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,2
+      B:
+        Pos: 1,1
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,2
+      B:
+        Pos: 0,2
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,1
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,1
+      B:
+        Pos: -1,2
+      BondTypes:
+      - standard
+    Name: Harmonious Brass
+  AmountOverride: 0
+- Molecule:
+    Atoms:
+    - AtomType: quicksilver
+      Position:
+        Pos: 0,0
+    Bonds: []
+    Name: Elemental Quicksilver
+  AmountOverride: 0
+OutputMultiplier: 1
+PermissionFlags: CoreTools
+CustomPermissions:
+- extransmutations-aeration
+- HalvingMetallurgy:osmosis
+Highlights: []
+ProductionInfo: 

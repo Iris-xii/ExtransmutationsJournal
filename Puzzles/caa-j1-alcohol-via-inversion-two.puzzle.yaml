@@ -1,0 +1,54 @@
+Name: Alcohol Via Inversion
+ID: caa-j1-alcohol-via-inversion-two
+Author: 'Unknown'
+Inputs:
+- Molecule:
+    Atoms:
+    - AtomType: water
+      Position:
+        Pos: 0,0
+    Bonds: []
+    Name: 'Elemental Water'
+  AmountOverride: 0
+Outputs:
+- Molecule:
+    Atoms:
+    - AtomType: water
+      Position:
+        Pos: 0,0
+    - AtomType: salt
+      Position:
+        Pos: -1,1
+    - AtomType: salt
+      Position:
+        Pos: 0,-1
+    - AtomType: fire
+      Position:
+        Pos: 1,0
+    Bonds:
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,-1
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,1
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    Name: Alcohol
+  AmountOverride: 0
+OutputMultiplier: 1
+PermissionFlags: CoreTools
+CustomPermissions:
+- extransmutations-cardinal-inversion
+Highlights: []
+ProductionInfo: 

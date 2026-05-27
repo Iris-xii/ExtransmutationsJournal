@@ -1,0 +1,709 @@
+Name: Aether Via Detector
+ID: caa-j3-aether-via-detector
+Author: 'Multiple Authors'
+Inputs:
+- Molecule:
+    Atoms:
+    - AtomType: salt
+      Position:
+        Pos: 0,0
+    - AtomType: air
+      Position:
+        Pos: -1,1
+    - AtomType: water
+      Position:
+        Pos: 0,1
+    - AtomType: mors
+      Position:
+        Pos: -1,0
+    - AtomType: vitae
+      Position:
+        Pos: 1,0
+    - AtomType: fire
+      Position:
+        Pos: 0,-1
+    - AtomType: earth
+      Position:
+        Pos: 1,-1
+    Bonds:
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 0,1
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,1
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,1
+      B:
+        Pos: 0,1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 1,-1
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,1
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,-1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,-1
+      B:
+        Pos: 1,-1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,-1
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,0
+      B:
+        Pos: 0,-1
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,0
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,0
+      B:
+        Pos: -1,1
+      BondTypes:
+      - standard
+    Name: Aether Detector
+  AmountOverride: 0
+Outputs:
+- Molecule:
+    Atoms:
+    - AtomType: air
+      Position:
+        Pos: -1,1
+    - AtomType: water
+      Position:
+        Pos: 0,1
+    - AtomType: UnstableElements:aether
+      Position:
+        Pos: 0,0
+    - AtomType: vitae
+      Position:
+        Pos: 1,0
+    - AtomType: mors
+      Position:
+        Pos: -1,0
+    - AtomType: fire
+      Position:
+        Pos: 0,-1
+    - AtomType: earth
+      Position:
+        Pos: 1,-1
+    Bonds:
+    - A:
+        Pos: -1,1
+      B:
+        Pos: 0,1
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,1
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 0,1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,1
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,0
+      B:
+        Pos: -1,1
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,0
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,-1
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,0
+      B:
+        Pos: 0,-1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,-1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,-1
+      B:
+        Pos: 1,-1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 1,-1
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    Name: Captured Aether
+  AmountOverride: 0
+- Molecule:
+    Atoms:
+    - AtomType: air
+      Position:
+        Pos: -1,1
+    - AtomType: water
+      Position:
+        Pos: 0,1
+    - AtomType: salt
+      Position:
+        Pos: 0,0
+    - AtomType: mors
+      Position:
+        Pos: -1,0
+    - AtomType: vitae
+      Position:
+        Pos: 1,0
+    - AtomType: fire
+      Position:
+        Pos: 0,-1
+    - AtomType: earth
+      Position:
+        Pos: 1,-1
+    Bonds:
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 0,1
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,1
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,1
+      B:
+        Pos: 0,1
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,0
+      B:
+        Pos: -1,1
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,0
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,1
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,0
+      B:
+        Pos: 0,-1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,-1
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 1,-1
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,-1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,-1
+      B:
+        Pos: 1,-1
+      BondTypes:
+      - standard
+    Name: Aether Detector
+  AmountOverride: 0
+OutputMultiplier: 1
+PermissionFlags: PrismaBonder, Duplication, CoreTools
+CustomPermissions: 
+- |
+  extransmissions::rule::MultiOutput::OutputMol: 1
+  SinkAny: true
+  WrongMolCrashesSim: true
+  Accepts:
+  - Molecule:
+      Atoms:
+      - AtomType: air
+        Position:
+          Pos: -1,1
+      - AtomType: water
+        Position:
+          Pos: 0,1
+      - AtomType: salt
+        Position:
+          Pos: 0,0
+      - AtomType: mors
+        Position:
+          Pos: -1,0
+      - AtomType: vitae
+        Position:
+          Pos: 1,0
+      - AtomType: fire
+        Position:
+          Pos: 0,-1
+      - AtomType: earth
+        Position:
+          Pos: 1,-1
+      Bonds:
+      - A:
+          Pos: 0,0
+        B:
+          Pos: 0,1
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,1
+        B:
+          Pos: 0,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,1
+        B:
+          Pos: 0,1
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,0
+        B:
+          Pos: -1,1
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,0
+        B:
+          Pos: 0,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: 0,0
+        B:
+          Pos: 1,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: 0,1
+        B:
+          Pos: 1,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,0
+        B:
+          Pos: 0,-1
+        BondTypes:
+        - standard
+      - A:
+          Pos: 0,-1
+        B:
+          Pos: 0,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: 1,-1
+        B:
+          Pos: 1,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: 0,0
+        B:
+          Pos: 1,-1
+        BondTypes:
+        - standard
+      - A:
+          Pos: 0,-1
+        B:
+          Pos: 1,-1
+        BondTypes:
+        - standard
+      Name: Aether Detector
+    AmountOverride: 0
+- |
+  extransmissions::rule::MultiOutput::OutputMol: 0
+  SinkAny: true
+  WrongMolCrashesSim: true
+  Accepts:
+  - Molecule:
+      Atoms:
+      - AtomType: air
+        Position:
+          Pos: -1,1
+      - AtomType: water
+        Position:
+          Pos: 0,1
+      - AtomType: UnstableElements:aether
+        Position:
+          Pos: 0,0
+      - AtomType: vitae
+        Position:
+          Pos: 1,0
+      - AtomType: mors
+        Position:
+          Pos: -1,0
+      - AtomType: fire
+        Position:
+          Pos: 0,-1
+      - AtomType: earth
+        Position:
+          Pos: 1,-1
+      Bonds:
+      - A:
+          Pos: -1,1
+        B:
+          Pos: 0,1
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,1
+        B:
+          Pos: 0,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: 0,0
+        B:
+          Pos: 0,1
+        BondTypes:
+        - standard
+      - A:
+          Pos: 0,1
+        B:
+          Pos: 1,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,0
+        B:
+          Pos: -1,1
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,0
+        B:
+          Pos: 0,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: 0,-1
+        B:
+          Pos: 0,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,0
+        B:
+          Pos: 0,-1
+        BondTypes:
+        - standard
+      - A:
+          Pos: 0,0
+        B:
+          Pos: 1,-1
+        BondTypes:
+        - standard
+      - A:
+          Pos: 0,-1
+        B:
+          Pos: 1,-1
+        BondTypes:
+        - standard
+      - A:
+          Pos: 1,-1
+        B:
+          Pos: 1,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: 0,0
+        B:
+          Pos: 1,0
+        BondTypes:
+        - standard
+      Name: Captured Aether
+    AmountOverride: 0
+- |
+  extransmissions::rule::RandomInput::InputMol: 0
+  RandomBag:
+  - Molecule:
+      Atoms:
+      - AtomType: salt
+        Position:
+          Pos: 0,0
+      - AtomType: air
+        Position:
+          Pos: -1,1
+      - AtomType: water
+        Position:
+          Pos: 0,1
+      - AtomType: mors
+        Position:
+          Pos: -1,0
+      - AtomType: vitae
+        Position:
+          Pos: 1,0
+      - AtomType: fire
+        Position:
+          Pos: 0,-1
+      - AtomType: earth
+        Position:
+          Pos: 1,-1
+      Bonds:
+      - A:
+          Pos: 0,0
+        B:
+          Pos: 0,1
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,1
+        B:
+          Pos: 0,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,1
+        B:
+          Pos: 0,1
+        BondTypes:
+        - standard
+      - A:
+          Pos: 0,0
+        B:
+          Pos: 1,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: 1,-1
+        B:
+          Pos: 1,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: 0,1
+        B:
+          Pos: 1,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: 0,0
+        B:
+          Pos: 1,-1
+        BondTypes:
+        - standard
+      - A:
+          Pos: 0,-1
+        B:
+          Pos: 1,-1
+        BondTypes:
+        - standard
+      - A:
+          Pos: 0,-1
+        B:
+          Pos: 0,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,0
+        B:
+          Pos: 0,-1
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,0
+        B:
+          Pos: 0,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,0
+        B:
+          Pos: -1,1
+        BondTypes:
+        - standard
+      Name: Aether Detector
+    AmountOverride: 0
+  - Molecule:
+      Atoms:
+      - AtomType: UnstableElements:aether
+        Position:
+          Pos: 0,0
+      - AtomType: air
+        Position:
+          Pos: -1,1
+      - AtomType: water
+        Position:
+          Pos: 0,1
+      - AtomType: mors
+        Position:
+          Pos: -1,0
+      - AtomType: vitae
+        Position:
+          Pos: 1,0
+      - AtomType: fire
+        Position:
+          Pos: 0,-1
+      - AtomType: earth
+        Position:
+          Pos: 1,-1
+      Bonds:
+      - A:
+          Pos: 0,0
+        B:
+          Pos: 0,1
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,1
+        B:
+          Pos: 0,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,1
+        B:
+          Pos: 0,1
+        BondTypes:
+        - standard
+      - A:
+          Pos: 0,0
+        B:
+          Pos: 1,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: 1,-1
+        B:
+          Pos: 1,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: 0,1
+        B:
+          Pos: 1,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: 0,0
+        B:
+          Pos: 1,-1
+        BondTypes:
+        - standard
+      - A:
+          Pos: 0,-1
+        B:
+          Pos: 1,-1
+        BondTypes:
+        - standard
+      - A:
+          Pos: 0,-1
+        B:
+          Pos: 0,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,0
+        B:
+          Pos: 0,-1
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,0
+        B:
+          Pos: 0,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,0
+        B:
+          Pos: -1,1
+        BondTypes:
+        - standard
+      Name: Aether Detector
+    AmountOverride: 0
+Highlights: []
+ProductionInfo: 

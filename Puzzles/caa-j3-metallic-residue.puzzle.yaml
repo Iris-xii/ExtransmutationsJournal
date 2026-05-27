@@ -1,0 +1,378 @@
+Name: Metallic Residue
+ID: caa-j3-metallic-residue
+Author: 'Tris, A.'
+Inputs:
+- Molecule:
+    Atoms:
+    - AtomType: HalvingMetallurgy:quicklime
+      Position:
+        Pos: 1,0
+    - AtomType: HalvingMetallurgy:quicklime
+      Position:
+        Pos: -1,1
+    - AtomType: iron
+      Position:
+        Pos: -1,2
+    - AtomType: iron
+      Position:
+        Pos: 0,0
+    - AtomType: HalvingMetallurgy:quicklime
+      Position:
+        Pos: 0,2
+    - AtomType: iron
+      Position:
+        Pos: 1,1
+    Bonds:
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,2
+      B:
+        Pos: 1,1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 1,0
+      B:
+        Pos: 1,1
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,2
+      B:
+        Pos: 0,2
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,1
+      B:
+        Pos: -1,2
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,1
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    Name: Metallic Residue
+  AmountOverride: 0
+Outputs:
+- Molecule:
+    Atoms:
+    - AtomType: iron
+      Position:
+        Pos: 0,0
+    - AtomType: iron
+      Position:
+        Pos: 1,0
+    - AtomType: iron
+      Position:
+        Pos: 2,0
+    - AtomType: iron
+      Position:
+        Pos: 3,0
+    - AtomType: repeat
+      Position:
+        Pos: 4,0
+    Bonds:
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 1,0
+      B:
+        Pos: 2,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 2,0
+      B:
+        Pos: 3,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 3,0
+      B:
+        Pos: 4,0
+      BondTypes:
+      - standard
+    Name: Metallic Iron
+  AmountOverride: 0
+- Molecule:
+    Atoms:
+    - AtomType: silver
+      Position:
+        Pos: 0,0
+    - AtomType: repeat
+      Position:
+        Pos: 1,0
+    Bonds:
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    Name: Metallic Silver
+  AmountOverride: 0
+- Molecule:
+    Atoms:
+    - AtomType: HalvingMetallurgy:quicklime
+      Position:
+        Pos: 0,0
+    Bonds: []
+    Name: Elemental Quicklime
+  AmountOverride: 0
+OutputMultiplier: 1
+PermissionFlags: Projection, CoreTools
+CustomPermissions:
+- ReductiveMetallurgy:rejection
+- |
+  extransmissions::rule::RandomInput::InputMol: 0
+  RandomBag:
+  - Molecule:
+      Atoms:
+      - AtomType: HalvingMetallurgy:quicklime
+        Position:
+          Pos: 1,0
+      - AtomType: HalvingMetallurgy:quicklime
+        Position:
+          Pos: -1,1
+      - AtomType: iron
+        Position:
+          Pos: -1,2
+      - AtomType: iron
+        Position:
+          Pos: 0,0
+      - AtomType: HalvingMetallurgy:quicklime
+        Position:
+          Pos: 0,2
+      - AtomType: iron
+        Position:
+          Pos: 1,1
+      Bonds:
+      - A:
+          Pos: 0,0
+        B:
+          Pos: 1,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: 0,2
+        B:
+          Pos: 1,1
+        BondTypes:
+        - standard
+      - A:
+          Pos: 1,0
+        B:
+          Pos: 1,1
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,2
+        B:
+          Pos: 0,2
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,1
+        B:
+          Pos: -1,2
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,1
+        B:
+          Pos: 0,0
+        BondTypes:
+        - standard
+      Name: Metallic Residue
+    AmountOverride: 0
+  - Molecule:
+      Atoms:
+      - AtomType: HalvingMetallurgy:quicklime
+        Position:
+          Pos: 1,0
+      - AtomType: HalvingMetallurgy:quicklime
+        Position:
+          Pos: -1,1
+      - AtomType: silver
+        Position:
+          Pos: -1,2
+      - AtomType: iron
+        Position:
+          Pos: 0,0
+      - AtomType: HalvingMetallurgy:quicklime
+        Position:
+          Pos: 0,2
+      - AtomType: iron
+        Position:
+          Pos: 1,1
+      Bonds:
+      - A:
+          Pos: 0,0
+        B:
+          Pos: 1,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: 0,2
+        B:
+          Pos: 1,1
+        BondTypes:
+        - standard
+      - A:
+          Pos: 1,0
+        B:
+          Pos: 1,1
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,2
+        B:
+          Pos: 0,2
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,1
+        B:
+          Pos: -1,2
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,1
+        B:
+          Pos: 0,0
+        BondTypes:
+        - standard
+      Name: Metallic Residue
+    AmountOverride: 0
+  - Molecule:
+      Atoms:
+      - AtomType: HalvingMetallurgy:quicklime
+        Position:
+          Pos: 1,0
+      - AtomType: HalvingMetallurgy:quicklime
+        Position:
+          Pos: -1,1
+      - AtomType: iron
+        Position:
+          Pos: -1,2
+      - AtomType: silver
+        Position:
+          Pos: 0,0
+      - AtomType: HalvingMetallurgy:quicklime
+        Position:
+          Pos: 0,2
+      - AtomType: iron
+        Position:
+          Pos: 1,1
+      Bonds:
+      - A:
+          Pos: 0,0
+        B:
+          Pos: 1,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: 0,2
+        B:
+          Pos: 1,1
+        BondTypes:
+        - standard
+      - A:
+          Pos: 1,0
+        B:
+          Pos: 1,1
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,2
+        B:
+          Pos: 0,2
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,1
+        B:
+          Pos: -1,2
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,1
+        B:
+          Pos: 0,0
+        BondTypes:
+        - standard
+      Name: Metallic Residue
+    AmountOverride: 0
+  - Molecule:
+      Atoms:
+      - AtomType: HalvingMetallurgy:quicklime
+        Position:
+          Pos: 1,0
+      - AtomType: HalvingMetallurgy:quicklime
+        Position:
+          Pos: -1,1
+      - AtomType: iron
+        Position:
+          Pos: -1,2
+      - AtomType: iron
+        Position:
+          Pos: 0,0
+      - AtomType: HalvingMetallurgy:quicklime
+        Position:
+          Pos: 0,2
+      - AtomType: silver
+        Position:
+          Pos: 1,1
+      Bonds:
+      - A:
+          Pos: 0,0
+        B:
+          Pos: 1,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: 0,2
+        B:
+          Pos: 1,1
+        BondTypes:
+        - standard
+      - A:
+          Pos: 1,0
+        B:
+          Pos: 1,1
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,2
+        B:
+          Pos: 0,2
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,1
+        B:
+          Pos: -1,2
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,1
+        B:
+          Pos: 0,0
+        BondTypes:
+        - standard
+      Name: Metallic Residue
+    AmountOverride: 0
+Highlights: []
+ProductionInfo: 

@@ -1,0 +1,90 @@
+Name: Illicit Disassembly
+ID: c698519006942833
+Author: 'Autumn, R.'
+Inputs:
+- Molecule:
+    Atoms:
+    - AtomType: air
+      Position:
+        Pos: 0,0
+    - AtomType: vitae
+      Position:
+        Pos: 0,1
+    - AtomType: air
+      Position:
+        Pos: -1,1
+    - AtomType: air
+      Position:
+        Pos: 0,-1
+    - AtomType: air
+      Position:
+        Pos: 1,-2
+    - AtomType: mors
+      Position:
+        Pos: 0,-2
+    - AtomType: earth
+      Position:
+        Pos: -1,-1
+    Bonds:
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 0,1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,-2
+      B:
+        Pos: 0,-1
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,-1
+      B:
+        Pos: 0,-1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,-1
+      B:
+        Pos: 0,0
+      BondTypes:
+      - triplex_1
+    - A:
+        Pos: 0,-1
+      B:
+        Pos: 1,-2
+      BondTypes:
+      - triplex_1
+    - A:
+        Pos: -1,1
+      B:
+        Pos: 0,0
+      BondTypes:
+      - triplex_1
+    Name: Illegal Stimulant
+  AmountOverride: 0
+Outputs:
+- Molecule:
+    Atoms:
+    - AtomType: salt
+      Position:
+        Pos: 0,0
+    Bonds: []
+    Name: Elemental Salt
+  AmountOverride: 0
+- Molecule:
+    Atoms:
+    - AtomType: salt
+      Position:
+        Pos: 0,0
+    Bonds: []
+    Name: Elemental Salt
+  AmountOverride: 0
+OutputMultiplier: 2
+PermissionFlags: AllMechanisms, Bonder, Unbonder, SpeedBonder, Disposal, BasicSymbols, ResetSymbol, RepeatSymbol, PivotSymbols
+CustomPermissions:
+- extransmutations-cardinal-revolution
+- extransmutations-cardinal-inversion
+Highlights: []
+ProductionInfo: 

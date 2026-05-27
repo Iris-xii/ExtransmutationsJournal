@@ -1,0 +1,90 @@
+Name: Elastic Tin Thread
+ID: caa-j2-elastic-tin-thread
+Author: 'Juvenal, L.'
+Inputs:
+- Molecule:
+    Atoms:
+    - AtomType: tin
+      Position:
+        Pos: 0,0
+    Bonds: []
+    Name: ''
+  AmountOverride: 0
+- Molecule:
+    Atoms:
+    - AtomType: air
+      Position:
+        Pos: 0,0
+    Bonds: []
+    Name: ''
+  AmountOverride: 0
+Outputs:
+- Molecule:
+    Atoms:
+    - AtomType: earth
+      Position:
+        Pos: 1,0
+    - AtomType: tin
+      Position:
+        Pos: 2,1
+    - AtomType: tin
+      Position:
+        Pos: 0,0
+    - AtomType: tin
+      Position:
+        Pos: 2,0
+    - AtomType: tin
+      Position:
+        Pos: 0,1
+    - AtomType: air
+      Position:
+        Pos: 1,1
+    - AtomType: repeat
+      Position:
+        Pos: 3,0
+    Bonds:
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 0,1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 1,0
+      B:
+        Pos: 1,1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 2,0
+      B:
+        Pos: 2,1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 1,1
+      B:
+        Pos: 2,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,1
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 2,1
+      B:
+        Pos: 3,0
+      BondTypes:
+      - standard
+    Name: Elastic Tin Thread
+  AmountOverride: 0
+OutputMultiplier: 1
+PermissionFlags: CoreTools
+CustomPermissions:
+- extransmutations-cardinal-inversion
+- extransmutations-aeration
+Highlights: []
+ProductionInfo: 

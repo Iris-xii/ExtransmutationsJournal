@@ -1,0 +1,154 @@
+Name: Algal Netting
+ID: caa-j4-algal-netting
+Author: 'Lux, Z.'
+Inputs:
+- Molecule:
+    Atoms:
+    - AtomType: salt
+      Position:
+        Pos: -1,0
+    - AtomType: salt
+      Position:
+        Pos: 0,1
+    - AtomType: salt
+      Position:
+        Pos: 1,-1
+    - AtomType: earth
+      Position:
+        Pos: 0,0
+    - AtomType: fire
+      Position:
+        Pos: 1,0
+    Bonds:
+    - A:
+        Pos: -1,0
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,-1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 0,1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    Name: Algal Oil
+  AmountOverride: 0
+Outputs:
+- Molecule:
+    Atoms:
+    - AtomType: salt
+      Position:
+        Pos: 2,-1
+    - AtomType: earth
+      Position:
+        Pos: 3,-1
+    - AtomType: salt
+      Position:
+        Pos: 0,0
+    - AtomType: salt
+      Position:
+        Pos: 1,1
+    - AtomType: salt
+      Position:
+        Pos: 2,0
+    - AtomType: earth
+      Position:
+        Pos: 1,0
+    - AtomType: repeat
+      Position:
+        Pos: 4,0
+    - AtomType: earth
+      Position:
+        Pos: 1,-1
+    - AtomType: earth
+      Position:
+        Pos: 0,1
+    - AtomType: water
+      Position:
+        Pos: 3,0
+    - AtomType: earth
+      Position:
+        Pos: 2,1
+    Bonds:
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 1,0
+      B:
+        Pos: 2,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 2,0
+      B:
+        Pos: 3,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 3,0
+      B:
+        Pos: 4,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 1,0
+      B:
+        Pos: 1,1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 1,0
+      B:
+        Pos: 2,-1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 1,-1
+      B:
+        Pos: 2,-1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 2,-1
+      B:
+        Pos: 3,-1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 1,1
+      B:
+        Pos: 2,1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,1
+      B:
+        Pos: 1,1
+      BondTypes:
+      - standard
+    Name: Algal Netting
+  AmountOverride: 0
+OutputMultiplier: 1
+PermissionFlags: CoreTools
+CustomPermissions:
+- extransmutations-cardinal-inversion
+- extransmutations-compaction
+Highlights: []
+ProductionInfo: 

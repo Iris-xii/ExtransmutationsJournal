@@ -1,0 +1,139 @@
+Name: Dry Lubricant
+ID: caa-j3-dry-lubricant
+Author: 'Juvenal, L.'
+Inputs:
+- Molecule:
+    Atoms:
+    - AtomType: earth
+      Position:
+        Pos: 0,0
+    Bonds: []
+    Name: 'Random Cardinal'
+  AmountOverride: 0
+- Molecule:
+    Atoms:
+    - AtomType: tin
+      Position:
+        Pos: 0,0
+    Bonds: []
+    Name: Elemental Tin
+  AmountOverride: 0
+Outputs:
+- Molecule:
+    Atoms:
+    - AtomType: earth
+      Position:
+        Pos: -1,1
+    - AtomType: salt
+      Position:
+        Pos: 0,0
+    - AtomType: earth
+      Position:
+        Pos: -2,2
+    - AtomType: salt
+      Position:
+        Pos: 0,1
+    - AtomType: salt
+      Position:
+        Pos: -3,2
+    - AtomType: salt
+      Position:
+        Pos: -3,3
+    - AtomType: tin
+      Position:
+        Pos: -2,1
+    - AtomType: tin
+      Position:
+        Pos: -1,2
+    Bonds:
+    - A:
+        Pos: -1,1
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: -3,3
+      B:
+        Pos: -2,2
+      BondTypes:
+      - standard
+    - A:
+        Pos: -2,1
+      B:
+        Pos: -2,2
+      BondTypes:
+      - standard
+    - A:
+        Pos: -2,2
+      B:
+        Pos: -1,2
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,1
+      B:
+        Pos: 0,1
+      BondTypes:
+      - standard
+    - A:
+        Pos: -3,2
+      B:
+        Pos: -2,2
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,1
+      B:
+        Pos: -1,2
+      BondTypes:
+      - standard
+    - A:
+        Pos: -2,1
+      B:
+        Pos: -1,1
+      BondTypes:
+      - standard
+    Name: Dry Lubricant
+  AmountOverride: 0
+OutputMultiplier: 1
+PermissionFlags: CoreTools
+CustomPermissions:
+- extransmutations-compaction
+- |
+  extransmissions::rule::RandomInput::InputMol: 0
+  RandomBag:
+  - Molecule:
+      Atoms:
+      - AtomType: earth
+        Position:
+          Pos: 0,0
+      Bonds: []
+      Name: ''
+    AmountOverride: 0
+  - Molecule:
+      Atoms:
+      - AtomType: air
+        Position:
+          Pos: 0,0
+      Bonds: []
+      Name: ''
+    AmountOverride: 0
+  - Molecule:
+      Atoms:
+      - AtomType: water
+        Position:
+          Pos: 0,0
+      Bonds: []
+      Name: ''
+    AmountOverride: 0
+  - Molecule:
+      Atoms:
+      - AtomType: fire
+        Position:
+          Pos: 0,0
+      Bonds: []
+      Name: ''
+    AmountOverride: 0
+Highlights: []
+ProductionInfo: 

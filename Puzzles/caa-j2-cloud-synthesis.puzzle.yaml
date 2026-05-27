@@ -1,0 +1,153 @@
+Name: Cloud Synthesis
+ID: caa-j2-cloud-synthesis
+Author: 'Damone, C.'
+Inputs:
+- Molecule:
+    Atoms:
+    - AtomType: salt
+      Position:
+        Pos: -1,1
+    - AtomType: salt
+      Position:
+        Pos: 0,-1
+    - AtomType: water
+      Position:
+        Pos: 0,0
+    - AtomType: fire
+      Position:
+        Pos: 1,0
+    Bonds:
+    - A:
+        Pos: 0,-1
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,1
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    Name: Alcohol
+  AmountOverride: 0
+- Molecule:
+    Atoms:
+    - AtomType: salt
+      Position:
+        Pos: -1,1
+    - AtomType: salt
+      Position:
+        Pos: 0,-1
+    - AtomType: water
+      Position:
+        Pos: 0,0
+    - AtomType: earth
+      Position:
+        Pos: 1,0
+    Bonds:
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,-1
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,1
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    Name: Petrichor
+  AmountOverride: 0
+Outputs:
+- Molecule:
+    Atoms:
+    - AtomType: water
+      Position:
+        Pos: 0,0
+    - AtomType: salt
+      Position:
+        Pos: -1,0
+    - AtomType: salt
+      Position:
+        Pos: 0,1
+    - AtomType: air
+      Position:
+        Pos: 1,-1
+    - AtomType: salt
+      Position:
+        Pos: 1,-2
+    - AtomType: water
+      Position:
+        Pos: 2,-1
+    - AtomType: salt
+      Position:
+        Pos: 2,0
+    - AtomType: salt
+      Position:
+        Pos: 3,-2
+    Bonds:
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 0,1
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,0
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,-1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 1,-2
+      B:
+        Pos: 1,-1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 1,-1
+      B:
+        Pos: 2,-1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 2,-1
+      B:
+        Pos: 2,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 2,-1
+      B:
+        Pos: 3,-2
+      BondTypes:
+      - standard
+    Name: Synthetic Cloud
+  AmountOverride: 0
+OutputMultiplier: 1
+PermissionFlags: CoreTools
+CustomPermissions:
+- extransmutations-cardinal-completion
+- extransmutations-cardinal-revolution
+Highlights: []
+ProductionInfo: 
