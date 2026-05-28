@@ -57,10 +57,38 @@ public class ExtransmutationsJournalMod : QuintessentialMod {
   public override void PostLoad() {
     WeirdPuzzle.EnsureSongListExists();
     hook_JournalScreen_method_1040 = new Hook(typeof(JournalScreen).GetMethod("method_1040", BF.NonPublic | BF.Instance), OnJournalScreen_Method_1040);
+    puzzleinfoscreen_method_1275 = new Hook(
+      typeof(PuzzleInfoScreen).GetMethod("method_1275", BF.NonPublic | BF.Instance),
+      OnSolLoad
+    );
   }
 
   public override void Unload() {
     hook_JournalScreen_method_1040 = null;
+    puzzleinfoscreen_method_1275 = null;
+  }
+
+  public Hook puzzleinfoscreen_method_1275;
+  internal static void OnSolLoad(
+      Action<PuzzleInfoScreen, Solution> orig,
+      PuzzleInfoScreen self,
+      Solution param_5012) {
+
+    Puzzle puzzle = param_5012.method_1934();
+    string[] ichorPuzzles = new string[] {"c745540563067307",
+      "c415712519340918","c190535029528117","c944705183945596","c115961162791068"};
+    if (ichorPuzzles.Contains(puzzle.field_2766)) {
+      puzzle.field_2769 = new(true, new class_215() {
+        field_1899 = puzzle.field_2766,
+        field_1900 = class_134.method_253("Ichor", string.Empty),
+        field_1901 = class_134.method_253("Having any Ichor atoms present on the board "+
+        "suppresses all outputs. ", string.Empty),
+        field_1902 = "CAA-ichor-tip",
+        field_1903 = new(),
+        field_1904 = new(0, 0),
+      });
+    }
+    orig(self, param_5012);
   }
 
   internal record struct WeirdPuzzle {
