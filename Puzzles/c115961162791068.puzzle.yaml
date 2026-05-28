@@ -1,0 +1,176 @@
+Name: Mist Of Clarity
+ID: c115961162791068
+Author: 'Elia, C.'
+Inputs:
+- Molecule:
+    Atoms:
+    - AtomType: salt
+      Position:
+        Pos: 0,0
+    - AtomType: earth
+      Position:
+        Pos: 1,0
+    - AtomType: earth
+      Position:
+        Pos: 1,1
+    - AtomType: UncommonPrimes:lux
+      Position:
+        Pos: 2,1
+    - AtomType: UncommonPrimes:lux
+      Position:
+        Pos: 0,2
+    Bonds:
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 1,0
+      B:
+        Pos: 1,1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 1,1
+      B:
+        Pos: 2,1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,2
+      B:
+        Pos: 1,1
+      BondTypes:
+      - standard
+    Name: Illuminating Powder
+  AmountOverride: 0
+- Molecule:
+    Atoms:
+    - AtomType: copper
+      Position:
+        Pos: 0,0
+    - AtomType: vitae
+      Position:
+        Pos: 1,0
+    Bonds:
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    Name: Rose Vitae
+  AmountOverride: 0
+- Molecule:
+    Atoms:
+    - AtomType: Extransmutations:ichor
+      Position:
+        Pos: 0,0
+    - AtomType: quicksilver
+      Position:
+        Pos: 1,0
+    - AtomType: Extransmutations:ichor
+      Position:
+        Pos: 2,-1
+    Bonds:
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 1,0
+      B:
+        Pos: 2,-1
+      BondTypes:
+      - standard
+    Name: Foul Quicksilver
+  AmountOverride: 0
+Outputs:
+- Molecule:
+    Atoms:
+    - AtomType: air
+      Position:
+        Pos: 0,0
+    - AtomType: copper
+      Position:
+        Pos: 1,0
+    - AtomType: vitae
+      Position:
+        Pos: -1,0
+    - AtomType: vitae
+      Position:
+        Pos: 1,-1
+    - AtomType: copper
+      Position:
+        Pos: -1,1
+    - AtomType: UncommonPrimes:lux
+      Position:
+        Pos: -1,2
+    - AtomType: UncommonPrimes:lux
+      Position:
+        Pos: 1,1
+    - AtomType: quicksilver
+      Position:
+        Pos: 0,2
+    Bonds:
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,-1
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,0
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,1
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 1,0
+      B:
+        Pos: 1,1
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,1
+      B:
+        Pos: -1,2
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,2
+      B:
+        Pos: 0,2
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,2
+      B:
+        Pos: 1,1
+      BondTypes:
+      - standard
+    Name: Mist Of Clarity
+  AmountOverride: 0
+OutputMultiplier: 1
+PermissionFlags: CoreTools
+CustomPermissions:
+- extransmutations-aeration
+- extransmutations-restoration
+Highlights: []
+ProductionInfo: 

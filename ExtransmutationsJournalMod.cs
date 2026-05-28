@@ -107,6 +107,11 @@ public class ExtransmutationsJournalMod : QuintessentialMod {
       ID = "c698519006942833",
       JournalPreview = new(){ {0,  "65, 5"} },
       previewsInput = true,
+    },
+    new() {
+      ID = "c944705183945596",
+      JournalPreview = new(){ {1,  "65, 5"} },
+      previewsInput = true,
     }
   };
 
