@@ -1,0 +1,74 @@
+Name: Scrying Fiber
+ID: c494033502433759
+Author: ''
+Inputs:
+- Molecule:
+    Atoms:
+    - AtomType: air
+      Position:
+        Pos: 0,0
+    Bonds: []
+    Name: ''
+  AmountOverride: 0
+- Molecule:
+    Atoms:
+    - AtomType: water
+      Position:
+        Pos: 0,0
+    Bonds: []
+    Name: ''
+  AmountOverride: 0
+Outputs:
+- Molecule:
+    Atoms:
+    - AtomType: UncommonPrimes:lux
+      Position:
+        Pos: 0,0
+    - AtomType: salt
+      Position:
+        Pos: 1,0
+    - AtomType: repeat
+      Position:
+        Pos: 2,0
+    - AtomType: earth
+      Position:
+        Pos: 0,1
+    - AtomType: earth
+      Position:
+        Pos: 1,-1
+    Bonds:
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 0,1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,-1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 1,0
+      B:
+        Pos: 2,0
+      BondTypes:
+      - standard
+    Name: Scrying Fiber
+  AmountOverride: 0
+OutputMultiplier: 1
+PermissionFlags: AllMechanisms, Bonder, Unbonder, SpeedBonder, BasicSymbols, ResetSymbol, RepeatSymbol, PivotSymbols
+CustomPermissions:
+- 'UncommonPrimes: Similarity'
+- extransmutations-extraordinary
+- extransmutations-cardinal-inversion
+- extransmutations-compaction
+Highlights: []
+ProductionInfo: 

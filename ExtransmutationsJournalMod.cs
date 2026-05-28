@@ -77,15 +77,31 @@ public class ExtransmutationsJournalMod : QuintessentialMod {
     Puzzle puzzle = param_5012.method_1934();
     string[] ichorPuzzles = new string[] {"c745540563067307",
       "c415712519340918","c190535029528117","c944705183945596","c115961162791068"};
+    string[] wheelTip1 = new string[] { "c223474890170320" };
     if (ichorPuzzles.Contains(puzzle.field_2766)) {
       puzzle.field_2769 = new(true, new class_215() {
         field_1899 = puzzle.field_2766,
         field_1900 = class_134.method_253("Ichor", string.Empty),
-        field_1901 = class_134.method_253("Having any Ichor atoms present on the board "+
-        "suppresses all outputs. ", string.Empty),
+        field_1901 = class_134.method_253("Having any *Ichor* atoms present on the board " +
+        "*suppresses all outputs* until Ichor is somehow disposed of or output. \n\n" +
+        "Though *Ichor* allows alchemists to create cardinals, all debts " +
+        "must eventually be repaid.", string.Empty),
         field_1902 = "CAA-ichor-tip",
         field_1903 = new(),
         field_1904 = new(0, 0),
+      });
+    }
+    if (wheelTip1.Contains(puzzle.field_2766)) {
+      puzzle.field_2769 = new(true, new class_215() {
+        field_1899 = puzzle.field_2766,
+        field_1900 = class_134.method_253("Soria's Wheel", string.Empty),
+        field_1901 = class_134.method_253("*Soria's Wheel* is able to interact with " +
+        "the *Glyph of Osmosis* and the *Glyph of Shearing* such that " +
+        "it is possible to bring quicksilver all the way down to " +
+        "*quicklime*.", string.Empty),
+        field_1902 = "CAA-wheel-tip",
+        field_1903 = new(),
+        field_1904 = new(40, 0),
       });
     }
     orig(self, param_5012);

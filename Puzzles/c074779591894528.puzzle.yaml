@@ -1,0 +1,102 @@
+Name: Imperceptible Igniter
+ID: c074779591894528
+Author: ''
+Inputs:
+- Molecule:
+    Atoms:
+    - AtomType: quicksilver
+      Position:
+        Pos: 0,0
+    Bonds: []
+    Name: ''
+  AmountOverride: 0
+- Molecule:
+    Atoms:
+    - AtomType: tin
+      Position:
+        Pos: 0,0
+    Bonds: []
+    Name: ''
+  AmountOverride: 0
+- Molecule:
+    Atoms:
+    - AtomType: water
+      Position:
+        Pos: 0,0
+    Bonds: []
+    Name: ''
+  AmountOverride: 0
+- Molecule:
+    Atoms:
+    - AtomType: UncommonPrimes:obscurum
+      Position:
+        Pos: 0,0
+    Bonds: []
+    Name: ''
+  AmountOverride: 0
+Outputs:
+- Molecule:
+    Atoms:
+    - AtomType: iron
+      Position:
+        Pos: 0,0
+    - AtomType: salt
+      Position:
+        Pos: -1,0
+    - AtomType: salt
+      Position:
+        Pos: 1,0
+    - AtomType: fire
+      Position:
+        Pos: 1,-1
+    - AtomType: UncommonPrimes:obscurum
+      Position:
+        Pos: 0,-1
+    Bonds:
+    - A:
+        Pos: -1,0
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,-1
+      BondTypes:
+      - triplex_0
+      - triplex_1
+      - triplex_2
+    - A:
+        Pos: 0,-1
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,0
+      B:
+        Pos: 0,-1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 1,-1
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    Name: Imperceptible Igniter
+  AmountOverride: 0
+OutputMultiplier: 1
+PermissionFlags: PrismaBonder, Projection, CoreTools
+CustomPermissions:
+- extransmutations-cardinal-inversion
+- HalvingMetallurgy:shearing
+Highlights: []
+ProductionInfo: 
