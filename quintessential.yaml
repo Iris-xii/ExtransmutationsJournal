@@ -3,7 +3,7 @@ Version: 1.0.0
 DLL: "ExtransmutationsJournal.dll"
 Dependencies:
 - Name: Quintessential
-  Version: 0.5.4
+  Version: 0.5.5
 - Name: Brimstone
   Version: 2.0.2
 - Name: Extransmutations
