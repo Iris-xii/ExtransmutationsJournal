@@ -19,48 +19,94 @@ using BF = System.Reflection.BindingFlags;
 //dotnet build;rm ExtransmutationsJournal.dll;cp bin/Debug/net4.5.2/ExtransmutationsJournal.dll ./
 public class ExtransmutationsJournalMod : QuintessentialMod {
 
+
+  public static class_215[] tips = new class_215[0];
   public override void Load() {
 
-    //string modPathDirectory = QuintessentialLoader.Mods.First(static m => m.Name == "ExtransmutationsJournal").PathDirectory;
-    //var modJournals = QuintessentialLoader.ModJournalModels;
-    //var journalModel = new JournalModel {
-    //  Title = "Compendium of affordable alchemy",
-    //  Path = Path.Combine(modPathDirectory, "Puzzles"),
-    //  Chapters = new List<JournalChapterModel> {
-    //    new() {
-    //      Title = "Volume V, Issue I: Neglected Transmutations (Part I)",
-    //      Description =
-    //       "Often neglected ever since the advent of Duplication, "
-    //      +"cardinal transmutations are nonetheless useful in the modern age.\n"
-    //      +"Easily incorporated into most alchemical engines with minimal "
-    //      +"modification and providing lower-cost processes, convenient transformations, "
-    //      +"and resilience in environments Duplication may struggle in, "
-    //      +"these transmutations provide new possibilities to any alchemical engineer "
-    //      +"still willing to make use of them.\n"
-    //      +"In this issue you may find a few such processes meant to help "
-    //      +"reignite even a skeptical alchemist's interest in these forgotten transmutations."
-    //      ,
-    //      Puzzles = new List<string>() {
-    //        "j1-alcohol-via-inversion-two",
-    //        "j1-desiccant-gel",
-    //        "j1-abrasive-gel",
-    //        "j1-harmonious-brass",
-    //        "j1-water",
-    //      }
-    //    },
-    //  },
-    //};
-    //
-    //modJournals.Add(journalModel); 
   }
+  internal Hook throwaway;
   internal Hook hook_JournalScreen_method_1040;
+  public static Maybe<Solution> throwawayFn(Func<string,Maybe<Solution>> orig,string param_5507) {
+    Logger.Log($"!!!! {param_5507}");
+    return orig(param_5507);
+  }
   public override void PostLoad() {
+    throwaway = new Hook(typeof(Solution).GetMethod("method_1958",BF.Public|BF.Static),
+    throwawayFn);
     WeirdPuzzle.EnsureSongListExists();
     hook_JournalScreen_method_1040 = new Hook(typeof(JournalScreen).GetMethod("method_1040", BF.NonPublic | BF.Instance), OnJournalScreen_Method_1040);
     puzzleinfoscreen_method_1275 = new Hook(
       typeof(PuzzleInfoScreen).GetMethod("method_1275", BF.NonPublic | BF.Instance),
       OnSolLoad
     );
+    tips = new class_215[] {
+      new() {
+        field_1899 = "c745540563067307",
+        field_1900 = class_134.method_253("Ichor", string.Empty),
+        field_1901 = class_134.method_253("Having any *Ichor* atoms present on the board " +
+        "*suppresses all outputs* until Ichor is somehow disposed of or output. \n\n" +
+        "Though *Ichor* allows alchemists to create cardinals, all debts " +
+        "must eventually be repaid.", string.Empty),
+        field_1902 = "CAA_ichor_tip",
+        field_1903 = new(),
+        field_1904 = new(0, -20),
+      },
+      new() {
+        field_1899 = "c415712519340918",
+        field_1900 = class_134.method_253("Ichor", string.Empty),
+        field_1901 = class_134.method_253("Having any *Ichor* atoms present on the board " +
+        "*suppresses all outputs* until Ichor is somehow disposed of or output. \n\n" +
+        "Though *Ichor* allows alchemists to create cardinals, all debts " +
+        "must eventually be repaid.", string.Empty),
+        field_1902 = "CAA_ichor_tip",
+        field_1903 = new(),
+        field_1904 = new(0, -20),
+      },
+      new() {
+        field_1899 = "c190535029528117",
+        field_1900 = class_134.method_253("Ichor", string.Empty),
+        field_1901 = class_134.method_253("Having any *Ichor* atoms present on the board " +
+        "*suppresses all outputs* until Ichor is somehow disposed of or output. \n\n" +
+        "Though *Ichor* allows alchemists to create cardinals, all debts " +
+        "must eventually be repaid.", string.Empty),
+        field_1902 = "CAA_ichor_tip",
+        field_1903 = new(),
+        field_1904 = new(0, -20),
+      },
+      new() {
+        field_1899 = "c944705183945596",
+        field_1900 = class_134.method_253("Ichor", string.Empty),
+        field_1901 = class_134.method_253("Having any *Ichor* atoms present on the board " +
+        "*suppresses all outputs* until Ichor is somehow disposed of or output. \n\n" +
+        "Though *Ichor* allows alchemists to create cardinals, all debts " +
+        "must eventually be repaid.", string.Empty),
+        field_1902 = "CAA_ichor_tip",
+        field_1903 = new(),
+        field_1904 = new(0, -20),
+      },
+      new() {
+        field_1899 = "c115961162791068",
+        field_1900 = class_134.method_253("Ichor", string.Empty),
+        field_1901 = class_134.method_253("Having any *Ichor* atoms present on the board " +
+        "*suppresses all outputs* until Ichor is somehow disposed of or output. \n\n" +
+        "Though *Ichor* allows alchemists to create cardinals, all debts " +
+        "must eventually be repaid.", string.Empty),
+        field_1902 = "CAA_ichor_tip",
+        field_1903 = new(),
+        field_1904 = new(0, -20),
+      },
+      //new() {
+      //  field_1899 = "c223474890170320",
+      //  field_1900 = class_134.method_253("Soria's Wheel", string.Empty),
+      //  field_1901 = class_134.method_253("*Soria's Wheel* is able to interact with " +
+      //  "the *Glyph of Osmosis* and the *Glyph of Shearing* such that " +
+      //  "it is possible to bring quicksilver all the way down to " +
+      //  "*quicklime*.", string.Empty),
+      //  field_1902 = "CAA_wheel_tip",
+      //  field_1903 = new(),
+      //  field_1904 = new(40, 0),
+      //},
+    };
   }
 
   public override void Unload() {
@@ -74,37 +120,14 @@ public class ExtransmutationsJournalMod : QuintessentialMod {
       PuzzleInfoScreen self,
       Solution param_5012) {
 
-    Puzzle puzzle = param_5012.method_1934();
-    string[] ichorPuzzles = new string[] {"c745540563067307",
-      "c415712519340918","c190535029528117","c944705183945596","c115961162791068"};
-    string[] wheelTip1 = new string[] { "c223474890170320" };
-    if (ichorPuzzles.Contains(puzzle.field_2766)) {
-      puzzle.field_2769 = new(true, new class_215() {
-        field_1899 = puzzle.field_2766,
-        field_1900 = class_134.method_253("Ichor", string.Empty),
-        field_1901 = class_134.method_253("Having any *Ichor* atoms present on the board " +
-        "*suppresses all outputs* until Ichor is somehow disposed of or output. \n\n" +
-        "Though *Ichor* allows alchemists to create cardinals, all debts " +
-        "must eventually be repaid.", string.Empty),
-        field_1902 = "CAA-ichor-tip",
-        field_1903 = new(),
-        field_1904 = new(0, 0),
-      });
-    }
-    if (wheelTip1.Contains(puzzle.field_2766)) {
-      puzzle.field_2769 = new(true, new class_215() {
-        field_1899 = puzzle.field_2766,
-        field_1900 = class_134.method_253("Soria's Wheel", string.Empty),
-        field_1901 = class_134.method_253("*Soria's Wheel* is able to interact with " +
-        "the *Glyph of Osmosis* and the *Glyph of Shearing* such that " +
-        "it is possible to bring quicksilver all the way down to " +
-        "*quicklime*.", string.Empty),
-        field_1902 = "CAA-wheel-tip",
-        field_1903 = new(),
-        field_1904 = new(40, 0),
-      });
-    }
     orig(self, param_5012);
+    Puzzle puzzle = param_5012.method_1934();
+    foreach (var tip in tips) {
+      if (puzzle.field_2766 == tip.field_1899) {
+        puzzle.field_2769 = tip;
+        break;
+      }
+    }
   }
 
   internal record struct WeirdPuzzle {

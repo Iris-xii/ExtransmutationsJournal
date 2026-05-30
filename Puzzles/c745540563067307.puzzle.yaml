@@ -28,6 +28,14 @@ Outputs:
     Bonds: []
     Name: Elemental Ichor
   AmountOverride: 0
+- Molecule:
+    Atoms:
+    - AtomType: salt
+      Position:
+        Pos: 0,0
+    Bonds: []
+    Name: Elemental Ichor
+  AmountOverride: 0
 OutputMultiplier: 2
 PermissionFlags: Disposal, CoreTools
 CustomPermissions:

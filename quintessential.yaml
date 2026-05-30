@@ -1,5 +1,5 @@
 Name: ExtransmutationsJournal
-Version: 1.0.0
+Version: 1.0.1
 DLL: "ExtransmutationsJournal.dll"
 Dependencies:
 - Name: Quintessential
