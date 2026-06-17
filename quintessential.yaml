@@ -1,5 +1,5 @@
 Name: ExtransmutationsJournal
-Version: 1.0.1
+Version: 2.0.0
 DLL: "ExtransmutationsJournal.dll"
 Dependencies:
 - Name: Quintessential
@@ -8,8 +8,8 @@ Dependencies:
   Version: 2.0.2
 - Name: Extransmutations
   Version: 1.0.0
-- Name: Extransmissions
-  Version: 0.1.1
+- Name: Extrawners
+  Version: 1.0.0
 - Name: HalvingMetallurgy
   Version: 4.0.0
 - Name: ReductiveMetallurgy

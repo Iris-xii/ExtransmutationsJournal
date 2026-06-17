@@ -5,7 +5,7 @@ A puzzle pack centered around, but not limited to, the Extransmutations mod, int
 - **Quintessential Fork, > 0.5.5** from https://github.com/ErikHaag/Quintessential
 - Brimstone (Library) 
 - Extransmutations 
-- Extransmissions 
+- Extrawners 
 - HalvingMetallurgy 
 - ReductiveMetallurgy 
 - UncommonPrimes 
@@ -14,7 +14,7 @@ A puzzle pack centered around, but not limited to, the Extransmutations mod, int
 ### Overview:
 
 - Issues I and II: Introduction to Extransmutations
-- Issue III: Introduction to Extransmissions
+- Issue III: Introduction to Extrawners
 - Issue IV: Extransmutations puzzles
 - Issue V: Introduction to Ichor
 - Issue VI: Mixed Extransmutations puzzles.

@@ -301,7 +301,7 @@ OutputMultiplier: 1
 PermissionFlags: PrismaBonder, Duplication, CoreTools
 CustomPermissions: 
 - |
-  extransmissions::rule::MultiOutput::OutputMol: 1
+  extrawners::rule::MultiOutput::OutputMol: 1
   SinkAny: true
   WrongMolCrashesSim: true
   Accepts:
@@ -404,7 +404,7 @@ CustomPermissions:
       Name: Aether Detector
     AmountOverride: 0
 - |
-  extransmissions::rule::MultiOutput::OutputMol: 0
+  extrawners::rule::MultiOutput::OutputMol: 0
   SinkAny: true
   WrongMolCrashesSim: true
   Accepts:
@@ -507,7 +507,7 @@ CustomPermissions:
       Name: Captured Aether
     AmountOverride: 0
 - |
-  extransmissions::rule::RandomInput::InputMol: 0
+  extrawners::rule::RandomInput::InputMol: 0
   RandomBag:
   - Molecule:
       Atoms:

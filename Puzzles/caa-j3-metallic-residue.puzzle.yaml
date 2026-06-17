@@ -136,7 +136,7 @@ PermissionFlags: Projection, CoreTools
 CustomPermissions:
 - ReductiveMetallurgy:rejection
 - |
-  extransmissions::rule::RandomInput::InputMol: 0
+  extrawners::rule::RandomInput::InputMol: 0
   RandomBag:
   - Molecule:
       Atoms:
