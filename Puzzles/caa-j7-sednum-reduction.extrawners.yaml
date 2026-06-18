@@ -1,0 +1,238 @@
+- Type: RemoveIO
+  InputsToRemove: []
+  OutputsToRemove: [1]
+- Type: MultiOutput
+  OkOutputs:
+    - Atoms:
+      - AtomType: tin
+        Position:
+          Pos: -1,1
+      - AtomType: iron
+        Position:
+          Pos: 0,0
+      - AtomType: iron
+        Position:
+          Pos: -1,2
+      - AtomType: tin
+        Position:
+          Pos: 0,2
+      - AtomType: iron
+        Position:
+          Pos: 1,1
+      - AtomType: tin
+        Position:
+          Pos: 1,0
+      Bonds:
+      - A:
+          Pos: 0,0
+        B:
+          Pos: 1,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,1
+        B:
+          Pos: 0,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,1
+        B:
+          Pos: -1,2
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,2
+        B:
+          Pos: 0,2
+        BondTypes:
+        - standard
+      - A:
+          Pos: 0,2
+        B:
+          Pos: 1,1
+        BondTypes:
+        - standard
+      - A:
+          Pos: 1,0
+        B:
+          Pos: 1,1
+        BondTypes:
+        - standard
+- Type: Spawner
+  SpawnAtBeginning:
+    - Atoms:
+      - AtomType: quicksilver
+        Position:
+          Pos: 0,0
+      Bonds: []
+    - Atoms:
+      - AtomType: quicksilver
+        Position:
+          Pos: 0,0
+      Bonds: []
+    - Atoms:
+      - AtomType: quicksilver
+        Position:
+          Pos: 0,0
+      Bonds: []
+- Type: Spawner
+  SpawnOnOutput:
+    - OutputGlyphIndex: 0
+      OutputMoleculeIndex: 0
+      Molecules:
+        - Atoms:
+          - AtomType: HalvingMetallurgy:sednum
+            Position:
+              Pos: 0,0
+          - AtomType: tin
+            Position:
+              Pos: 1,0
+          - AtomType: tin
+            Position:
+              Pos: 0,-1
+          - AtomType: tin
+            Position:
+              Pos: -1,1
+          - AtomType: tin
+            Position:
+              Pos: -1,0
+          - AtomType: tin
+            Position:
+              Pos: 1,-1
+          - AtomType: tin
+            Position:
+              Pos: 0,1
+          Bonds:
+          - A:
+              Pos: 0,-1
+            B:
+              Pos: 0,0
+            BondTypes:
+            - standard
+          - A:
+              Pos: 0,0
+            B:
+              Pos: 1,0
+            BondTypes:
+            - standard
+          - A:
+              Pos: -1,1
+            B:
+              Pos: 0,0
+            BondTypes:
+            - standard
+          - A:
+              Pos: -1,0
+            B:
+              Pos: -1,1
+            BondTypes:
+            - standard
+          - A:
+              Pos: -1,0
+            B:
+              Pos: 0,-1
+            BondTypes:
+            - standard
+          - A:
+              Pos: 0,-1
+            B:
+              Pos: 1,-1
+            BondTypes:
+            - standard
+          - A:
+              Pos: 1,-1
+            B:
+              Pos: 1,0
+            BondTypes:
+            - standard
+          - A:
+              Pos: 0,1
+            B:
+              Pos: 1,0
+            BondTypes:
+            - standard
+          - A:
+              Pos: -1,1
+            B:
+              Pos: 0,1
+            BondTypes:
+            - standard
+  SpawnAtBeginning:
+    - Atoms:
+      - AtomType: HalvingMetallurgy:sednum
+        Position:
+          Pos: 0,0
+      - AtomType: tin
+        Position:
+          Pos: 1,0
+      - AtomType: tin
+        Position:
+          Pos: 0,-1
+      - AtomType: tin
+        Position:
+          Pos: -1,1
+      - AtomType: tin
+        Position:
+          Pos: -1,0
+      - AtomType: tin
+        Position:
+          Pos: 1,-1
+      - AtomType: tin
+        Position:
+          Pos: 0,1
+      Bonds:
+      - A:
+          Pos: 0,-1
+        B:
+          Pos: 0,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: 0,0
+        B:
+          Pos: 1,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,1
+        B:
+          Pos: 0,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,0
+        B:
+          Pos: -1,1
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,0
+        B:
+          Pos: 0,-1
+        BondTypes:
+        - standard
+      - A:
+          Pos: 0,-1
+        B:
+          Pos: 1,-1
+        BondTypes:
+        - standard
+      - A:
+          Pos: 1,-1
+        B:
+          Pos: 1,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: 0,1
+        B:
+          Pos: 1,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,1
+        B:
+          Pos: 0,1
+        BondTypes:
+        - standard

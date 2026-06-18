@@ -9,7 +9,7 @@ A puzzle pack centered around, but not limited to, the Extransmutations mod, int
 - HalvingMetallurgy 
 - ReductiveMetallurgy 
 - UncommonPrimes 
-- UnstableElements
+- UnstableElements 
 
 ### Overview:
 

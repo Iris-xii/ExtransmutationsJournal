@@ -1,0 +1,55 @@
+Name: Catalyzed Water
+ID: caa-j7-catalyzed-water
+Author: 'Juvenal, L.'
+Inputs:
+- Molecule:
+    Atoms:
+    - AtomType: salt
+      Position:
+        Pos: 0,0
+    Bonds: []
+    Name: Elemental Salt
+  AmountOverride: 0
+- Molecule:
+    Atoms:
+    - AtomType: salt
+      Position:
+        Pos: 0,0
+    Bonds: []
+    Name: Elemental Salt
+  AmountOverride: 0
+Outputs:
+- Molecule:
+    Atoms:
+    - AtomType: water
+      Position:
+        Pos: 0,0
+    - AtomType: salt
+      Position:
+        Pos: -1,1
+    - AtomType: salt
+      Position:
+        Pos: 0,-1
+    Bonds:
+    - A:
+        Pos: -1,1
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,-1
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    Name: Water
+  AmountOverride: 0
+OutputMultiplier: 2
+PermissionFlags: CoreTools
+CustomPermissions:
+- extransmutations-liquidation
+Highlights: []
+ProductionInfo: 
+Conduits: 
+Payloads: 

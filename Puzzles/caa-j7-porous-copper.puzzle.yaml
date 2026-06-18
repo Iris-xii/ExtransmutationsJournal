@@ -1,0 +1,39 @@
+Name: Porous Copper
+ID: caa-j7-porous-copper
+Author: 'Testa, K.'
+Inputs: []
+Outputs:
+- Molecule:
+    Atoms:
+    - AtomType: Extransmutations:ichor
+      Position:
+        Pos: 0,0
+    - AtomType: copper
+      Position:
+        Pos: 0,1
+    - AtomType: earth
+      Position:
+        Pos: -1,2
+    Bonds:
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 0,1
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,2
+      B:
+        Pos: 0,1
+      BondTypes:
+      - standard
+    Name: Porous Copper
+  AmountOverride: 0
+OutputMultiplier: 1
+PermissionFlags: CoreTools
+CustomPermissions:
+- extransmutations-compaction
+Highlights: []
+ProductionInfo: 
+Conduits: 
+Payloads: 

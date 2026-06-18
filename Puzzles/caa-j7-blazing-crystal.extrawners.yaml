@@ -1,0 +1,217 @@
+- Type: RemoveIO
+  InputsToRemove: []
+  OutputsToRemove: [0]
+- Type: Spawner
+  CustomName: Elemental Fire
+  CustomDesc: A catalyst, replenished on every output.
+  SpawnAtBeginning:
+    - Atoms:
+      - AtomType: fire
+        Position:
+          Pos: 0,0
+      Bonds: []
+  SpawnOnOutput:
+    - OutputGlyphIndex: 1
+      OutputMoleculeIndex: 0
+      Molecules:
+        - Atoms:
+          - AtomType: fire
+            Position:
+              Pos: 0,0
+          Bonds: []
+- Type: MultiOutput
+  OkOutputs:
+    - Atoms:
+      - AtomType: salt
+        Position:
+          Pos: -1,0
+      - AtomType: fire
+        Position:
+          Pos: 0,0
+      - AtomType: salt
+        Position:
+          Pos: 0,1
+      - AtomType: salt
+        Position:
+          Pos: 1,-1
+      - AtomType: salt
+        Position:
+          Pos: -2,2
+      - AtomType: salt
+        Position:
+          Pos: -1,2
+      - AtomType: air
+        Position:
+          Pos: 0,2
+      - AtomType: salt
+        Position:
+          Pos: 1,1
+      - AtomType: salt
+        Position:
+          Pos: 2,0
+      - AtomType: salt
+        Position:
+          Pos: 2,-1
+      - AtomType: air
+        Position:
+          Pos: 2,-2
+      - AtomType: salt
+        Position:
+          Pos: 1,-2
+      - AtomType: salt
+        Position:
+          Pos: 0,-2
+      - AtomType: air
+        Position:
+          Pos: -2,0
+      - AtomType: salt
+        Position:
+          Pos: -1,-1
+      - AtomType: salt
+        Position:
+          Pos: -2,1
+      Bonds:
+      - A:
+          Pos: 0,0
+        B:
+          Pos: 0,1
+        BondTypes:
+        - standard
+      - A:
+          Pos: 0,0
+        B:
+          Pos: 1,-1
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,0
+        B:
+          Pos: 0,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: -2,0
+        B:
+          Pos: -1,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: -2,0
+        B:
+          Pos: -2,1
+        BondTypes:
+        - standard
+      - A:
+          Pos: -2,0
+        B:
+          Pos: -1,-1
+        BondTypes:
+        - standard
+      - A:
+          Pos: 1,-1
+        B:
+          Pos: 2,-2
+        BondTypes:
+        - standard
+      - A:
+          Pos: 1,-2
+        B:
+          Pos: 2,-2
+        BondTypes:
+        - standard
+      - A:
+          Pos: 2,-2
+        B:
+          Pos: 2,-1
+        BondTypes:
+        - standard
+      - A:
+          Pos: 0,1
+        B:
+          Pos: 0,2
+        BondTypes:
+        - standard
+      - A:
+          Pos: 0,2
+        B:
+          Pos: 1,1
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,2
+        B:
+          Pos: 0,2
+        BondTypes:
+        - standard
+      - A:
+          Pos: 1,1
+        B:
+          Pos: 2,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: 2,-1
+        B:
+          Pos: 2,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: 0,-2
+        B:
+          Pos: 1,-2
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,-1
+        B:
+          Pos: 0,-2
+        BondTypes:
+        - standard
+      - A:
+          Pos: -2,1
+        B:
+          Pos: -2,2
+        BondTypes:
+        - standard
+      - A:
+          Pos: -2,2
+        B:
+          Pos: -1,2
+        BondTypes:
+        - standard
+      - A:
+          Pos: 1,-2
+        B:
+          Pos: 1,-1
+        BondTypes:
+        - standard
+      - A:
+          Pos: 1,-1
+        B:
+          Pos: 2,-1
+        BondTypes:
+        - standard
+      - A:
+          Pos: 0,1
+        B:
+          Pos: 1,1
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,2
+        B:
+          Pos: 0,1
+        BondTypes:
+        - standard
+      - A:
+          Pos: -1,-1
+        B:
+          Pos: -1,0
+        BondTypes:
+        - standard
+      - A:
+          Pos: -2,1
+        B:
+          Pos: -1,0
+        BondTypes:
+        - standard

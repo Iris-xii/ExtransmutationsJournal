@@ -1,0 +1,26 @@
+- Type: Spawner
+  CustomName: "Saverio's Transformer (out)"
+  SpawnAtBeginning:
+    - Atoms:
+      - AtomType: quicksilver
+        Position:
+          Pos: 0,0
+      Bonds: []
+  SpawnOnOutput:
+    - OutputGlyphIndex: 1
+      OutputMoleculeIndex: 0
+      Molecules:
+        - Atoms:
+          - AtomType: quicksilver
+            Position:
+              Pos: 0,0
+          Bonds: []
+- Type: MultiOutput
+  RequiredProducts: 0
+  CustomName: "Saverio's Transformer (in)"
+  OkOutputs:
+    - Atoms:
+      - AtomType: lead
+        Position:
+          Pos: 0,0
+      Bonds: []

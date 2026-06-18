@@ -1,0 +1,30 @@
+Name: Induction Loop
+ID: caa-j7-induction-loop
+Author: 'Alcaro, W.'
+Inputs:
+- Molecule:
+    Atoms:
+    - AtomType: salt
+      Position:
+        Pos: 0,0
+    Bonds: []
+    Name: Elemental Salt
+  AmountOverride: 0
+Outputs:
+- Molecule:
+    Atoms:
+    - AtomType: fire
+      Position:
+        Pos: 0,0
+    Bonds: []
+    Name: Elemental Fire
+  AmountOverride: 0
+OutputMultiplier: 1
+PermissionFlags: CoreTools, BaronWheel
+CustomPermissions:
+- extransmutations-induction
+- extransmutations-cardinal-completion-v2
+Highlights: []
+ProductionInfo: 
+Conduits: 
+Payloads: 
