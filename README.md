@@ -1,5 +1,5 @@
 # Extransmutations Journal
-A puzzle pack centered around, but not limited to, the Extransmutations mod, introducing the Compendium of Affordable Alchemy, Volume V.
+A puzzle pack centered around, but not limited to, the Extransmutations mod, introducing the Compendium of Affordable Alchemy.
 
 ## Required Mods:
 - **Quintessential Fork, > 0.5.5** from https://github.com/ErikHaag/Quintessential
@@ -20,6 +20,7 @@ A puzzle pack centered around, but not limited to, the Extransmutations mod, int
 - Issue V: Introduction to Ichor
 - Issue VI: Mixed Extransmutations puzzles.
 - Issue VII: Extrawners Catalysts
+- Issue VIII: Extrawners + Prima Materia
 
 ## Credits:
 - The entirety of the OM modding community and everything this level pack builds on.
