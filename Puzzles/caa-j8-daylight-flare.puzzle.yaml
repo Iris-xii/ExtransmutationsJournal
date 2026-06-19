@@ -1,0 +1,94 @@
+Name: Daylight Flare
+ID: caa-j8-daylight-flare
+Author: 'Elia, C.'
+Inputs:
+- Molecule:
+    Atoms:
+    - AtomType: earth
+      Position:
+        Pos: 0,0
+    Bonds: []
+    Name: Elemental Earth
+  AmountOverride: 0
+- Molecule:
+    Atoms:
+    - AtomType: PrimaMateria:sulfur
+      Position:
+        Pos: 0,0
+    Bonds: []
+    Name: Elemental Sulfur
+  AmountOverride: 0
+Outputs:
+- Molecule:
+    Atoms:
+    - AtomType: PrimaMateria:magnesia
+      Position:
+        Pos: 0,0
+    - AtomType: salt
+      Position:
+        Pos: -1,0
+    - AtomType: salt
+      Position:
+        Pos: 1,0
+    - AtomType: fire
+      Position:
+        Pos: -1,1
+    - AtomType: fire
+      Position:
+        Pos: 1,-1
+    - AtomType: UncommonPrimes:lux
+      Position:
+        Pos: 0,1
+    - AtomType: UncommonPrimes:lux
+      Position:
+        Pos: 0,-1
+    Bonds:
+    - A:
+        Pos: -1,0
+      B:
+        Pos: 0,0
+      BondTypes:
+      - calcic_bond
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,0
+      BondTypes:
+      - calcic_bond
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,-1
+      BondTypes:
+      - standard
+    - A:
+        Pos: -1,1
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 0,1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,-1
+      B:
+        Pos: 0,0
+      BondTypes:
+      - standard
+    Name: Daylight Flare
+  AmountOverride: 0
+OutputMultiplier: 1
+PermissionFlags: CoreTools
+CustomPermissions:
+- 'UncommonPrimes: Similarity'
+- extransmutations-cardinal-revolution
+- 'PrimaMateria: Inversion'
+- 'PrimaMateria: Calcic Bonder'
+Highlights: []
+ProductionInfo: 
+Conduits: 
+Payloads: 

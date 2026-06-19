@@ -1,0 +1,37 @@
+Name: Volatiles Sequence
+ID: caa-j8-volatile-sequence
+Author: Multiple Authors
+Inputs:
+- Molecule:
+    Atoms:
+    - AtomType: salt
+      Position:
+        Pos: 0,0
+    Bonds: []
+    Name: Elemental Salt
+  AmountOverride: 0
+Outputs:
+- Molecule:
+    Atoms:
+    - AtomType: salt
+      Position:
+        Pos: 0,0
+    - AtomType: PrimaMateria:phosphor
+      Position:
+        Pos: 1,0
+    Bonds:
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+OutputMultiplier: 1
+PermissionFlags: CoreTools
+CustomPermissions:
+- "PrimaMateria: Fabienne's Wheel"
+- 'PrimaMateria: Subversion'
+Highlights: []
+ProductionInfo: 
+Conduits: 
+Payloads: 

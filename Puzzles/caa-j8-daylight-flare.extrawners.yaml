@@ -1,0 +1,14 @@
+- Type: Spawner
+  SpawnAtBeginning:
+    - Atoms:
+      - AtomType: earth
+        Position:
+          Pos: 0,0
+      Bonds: []
+- Type: Spawner
+  SpawnAtBeginning:
+    - Atoms:
+      - AtomType: fire
+        Position:
+          Pos: 0,0
+      Bonds: []

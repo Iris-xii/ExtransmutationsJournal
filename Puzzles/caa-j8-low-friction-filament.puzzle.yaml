@@ -1,0 +1,75 @@
+Name: Low-Friction Filament
+ID: caa-j8-low-friction-filament
+Author: Autumn, R.
+Inputs:
+- Molecule:
+    Atoms:
+    - AtomType: silver
+      Position:
+        Pos: 0,0
+    Bonds: []
+    Name: Elemental Silver
+  AmountOverride: 0
+- Molecule:
+    Atoms:
+    - AtomType: PrimaMateria:antimony
+      Position:
+        Pos: 0,0
+    Bonds: []
+    Name: Elemental Antimony
+  AmountOverride: 0
+Outputs:
+- Molecule:
+    Atoms:
+    - AtomType: quintessence
+      Position:
+        Pos: 1,0
+    - AtomType: lead
+      Position:
+        Pos: 0,0
+    - AtomType: repeat
+      Position:
+        Pos: 2,0
+    - AtomType: PrimaMateria:antimony
+      Position:
+        Pos: 1,-1
+    - AtomType: PrimaMateria:antimony
+      Position:
+        Pos: 1,1
+    Bonds:
+    - A:
+        Pos: 1,0
+      B:
+        Pos: 2,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 0,0
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    - A:
+        Pos: 1,0
+      B:
+        Pos: 1,1
+      BondTypes:
+      - standard
+    - A:
+        Pos: 1,-1
+      B:
+        Pos: 1,0
+      BondTypes:
+      - standard
+    Name: Low-Friction Filament
+  AmountOverride: 0
+OutputMultiplier: 1
+PermissionFlags: Duplication, Quintessence, CoreTools
+CustomPermissions:
+- ReductiveMetallurgy:rejection
+- 'PrimaMateria: Sublimation'
+- 'PrimaMateria: Alignment'
+Highlights: []
+ProductionInfo: 
+Conduits: 
+Payloads: 

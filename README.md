@@ -10,6 +10,7 @@ A puzzle pack centered around, but not limited to, the Extransmutations mod, int
 - ReductiveMetallurgy 
 - UncommonPrimes 
 - UnstableElements 
+- PrimaMateria
 
 ### Overview:
 
@@ -18,6 +19,7 @@ A puzzle pack centered around, but not limited to, the Extransmutations mod, int
 - Issue IV: Extransmutations puzzles
 - Issue V: Introduction to Ichor
 - Issue VI: Mixed Extransmutations puzzles.
+- Issue VII: Extrawners Catalysts
 
 ## Credits:
 - The entirety of the OM modding community and everything this level pack builds on.

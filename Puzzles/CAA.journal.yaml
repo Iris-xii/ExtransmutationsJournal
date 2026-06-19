@@ -57,10 +57,10 @@ Chapters:
   - "caa-j7-porous-copper"  
   - "caa-j7-sednum-reduction"  
 - Title: "Volume V, Issue VIII: Exotic Reagents On The Cheap"
-  Description: "todo"
-  Puzzles:
-  - "c745540563067307" # Ichor
-  - "c745540563067307" # Ichor
-  - "c745540563067307" # Ichor
-  - "c745540563067307" # Ichor
-  - "c745540563067307" # Ichor
+  Description: "Many less fortunate alchemists are discouraged from exploring the latest and not so latest developments in alchemical science, often due to costly processes or the limited availability of certain costs and reagents. While this is unlikely to change, here we offer a collection of (relatively) inexpensive recipes to alleviate this issue somewhat and help prospective researchers explore the frontiers of alchemical science."
+  Puzzles:  
+  - "caa-j8-synthesis-via-triad"  
+  - "caa-j8-volatile-sequence"  
+  - "caa-j8-daylight-flare"  
+  - "caa-j8-low-friction-filament"  
+  - "caa-j8-aetheric-knot"  

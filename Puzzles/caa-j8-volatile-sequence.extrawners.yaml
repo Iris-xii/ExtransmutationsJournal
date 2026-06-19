@@ -1,0 +1,236 @@
+- Type: Spawner
+  SpawnAtBeginning:
+    - Atoms:
+      - AtomType: PrimaMateria:sulfur
+        Position:
+          Pos: 0,0
+- Type: MultiOutput
+  CustomName: Stabilized Volatiles
+  CustomDesc: The volatile sequence, produced in order.
+  RequiredProducts: 12
+  OkOutputs:
+    - Atoms:
+      - AtomType: salt
+        Position:
+          Pos: 0,0
+      - AtomType: PrimaMateria:sulfur
+        Position:
+          Pos: 1,0
+      Bonds:
+      - A:
+          Pos: 0,0
+        B:
+          Pos: 1,0
+        BondTypes:
+        - standard
+    - Atoms:
+      - AtomType: salt
+        Position:
+          Pos: 0,0
+      - AtomType: PrimaMateria:phosphor
+        Position:
+          Pos: 1,0
+      Bonds:
+      - A:
+          Pos: 0,0
+        B:
+          Pos: 1,0
+        BondTypes:
+        - standard
+    - Atoms:
+      - AtomType: salt
+        Position:
+          Pos: 0,0
+      - AtomType: PrimaMateria:antimony
+        Position:
+          Pos: 1,0
+      Bonds:
+      - A:
+          Pos: 0,0
+        B:
+          Pos: 1,0
+        BondTypes:
+        - standard
+    - Atoms:
+      - AtomType: salt
+        Position:
+          Pos: 0,0
+      - AtomType: PrimaMateria:magnesia
+        Position:
+          Pos: 1,0
+      Bonds:
+      - A:
+          Pos: 0,0
+        B:
+          Pos: 1,0
+        BondTypes:
+        - standard
+    - Atoms:
+      - AtomType: salt
+        Position:
+          Pos: 0,0
+      - AtomType: PrimaMateria:potash
+        Position:
+          Pos: 1,0
+      Bonds:
+      - A:
+          Pos: 0,0
+        B:
+          Pos: 1,0
+        BondTypes:
+        - standard
+    - Atoms:
+      - AtomType: salt
+        Position:
+          Pos: 0,0
+      - AtomType: PrimaMateria:quicklime
+        Position:
+          Pos: 1,0
+      Bonds:
+      - A:
+          Pos: 0,0
+        B:
+          Pos: 1,0
+        BondTypes:
+        - standard
+- Type: RandomInputRule
+  CustomName: Elemental Sulfur
+  CustomDesc: A reagent for this alchemical engine.
+  DependentOutputs:
+    - OutputGlyphIndex: 1
+      OutputMoleculeIndex: 0
+      Molecules:
+      - Atoms:
+        - AtomType: salt
+          Position:
+            Pos: 0,0
+        - AtomType: PrimaMateria:sulfur
+          Position:
+            Pos: 1,0
+        Bonds:
+        - A:
+            Pos: 0,0
+          B:
+            Pos: 1,0
+          BondTypes:
+          - standard
+    - OutputGlyphIndex: 1
+      OutputMoleculeIndex: 1
+      Molecules:
+      - Atoms:
+        - AtomType: salt
+          Position:
+            Pos: 0,0
+        - AtomType: PrimaMateria:phosphor
+          Position:
+            Pos: 1,0
+        Bonds:
+        - A:
+            Pos: 0,0
+          B:
+            Pos: 1,0
+          BondTypes:
+          - standard
+    - OutputGlyphIndex: 1
+      OutputMoleculeIndex: 2
+      Molecules:
+      - Atoms:
+        - AtomType: salt
+          Position:
+            Pos: 0,0
+        - AtomType: PrimaMateria:antimony
+          Position:
+            Pos: 1,0
+        Bonds:
+        - A:
+            Pos: 0,0
+          B:
+            Pos: 1,0
+          BondTypes:
+          - standard
+    - OutputGlyphIndex: 1
+      OutputMoleculeIndex: 3
+      Molecules:
+      - Atoms:
+        - AtomType: salt
+          Position:
+            Pos: 0,0
+        - AtomType: PrimaMateria:magnesia
+          Position:
+            Pos: 1,0
+        Bonds:
+        - A:
+            Pos: 0,0
+          B:
+            Pos: 1,0
+          BondTypes:
+          - standard
+    - OutputGlyphIndex: 1
+      OutputMoleculeIndex: 4
+      Molecules:
+      - Atoms:
+        - AtomType: salt
+          Position:
+            Pos: 0,0
+        - AtomType: PrimaMateria:potash
+          Position:
+            Pos: 1,0
+        Bonds:
+        - A:
+            Pos: 0,0
+          B:
+            Pos: 1,0
+          BondTypes:
+          - standard
+    - OutputGlyphIndex: 1
+      OutputMoleculeIndex: 5
+      Molecules:
+      - Atoms:
+        - AtomType: salt
+          Position:
+            Pos: 0,0
+        - AtomType: PrimaMateria:quicklime
+          Position:
+            Pos: 1,0
+        Bonds:
+        - A:
+            Pos: 0,0
+          B:
+            Pos: 1,0
+          BondTypes:
+          - standard
+  DisableRng: true
+  RandomBag:
+    - Atoms:
+      - AtomType: PrimaMateria:sulfur
+        Position:
+          Pos: 0,0
+      Bonds: []
+    - Atoms:
+      - AtomType: PrimaMateria:sulfur
+        Position:
+          Pos: 0,0
+      Bonds: []
+    - Atoms:
+      - AtomType: PrimaMateria:sulfur
+        Position:
+          Pos: 0,0
+      Bonds: []
+    - Atoms:
+      - AtomType: PrimaMateria:sulfur
+        Position:
+          Pos: 0,0
+      Bonds: []
+    - Atoms:
+      - AtomType: PrimaMateria:sulfur
+        Position:
+          Pos: 0,0
+      Bonds: []
+    - Atoms:
+      - AtomType: PrimaMateria:sulfur
+        Position:
+          Pos: 0,0
+      Bonds: []
+- Type: RemoveIO
+  InputsToRemove: []
+  OutputsToRemove: [0]
