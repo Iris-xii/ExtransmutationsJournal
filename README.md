@@ -21,6 +21,7 @@ A puzzle pack centered around, but not limited to, the Extransmutations mod, int
 - Issue VI: Mixed Extransmutations puzzles.
 - Issue VII: Extrawners Catalysts
 - Issue VIII: Extrawners + Prima Materia
+- Issue IX: Extrawners + Prima Materia (mostly)
 
 ## Credits:
 - The entirety of the OM modding community and everything this level pack builds on.
