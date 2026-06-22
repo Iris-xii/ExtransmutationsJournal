@@ -64,7 +64,7 @@ Outputs:
     Name: Low-Friction Filament
   AmountOverride: 0
 OutputMultiplier: 1
-PermissionFlags: Duplication, Quintessence, CoreTools
+PermissionFlags: Duplication, Quintessence, CoreTools, BaronWheel
 CustomPermissions:
 - ReductiveMetallurgy:rejection
 - 'PrimaMateria: Sublimation'
