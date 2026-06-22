@@ -1,0 +1,30 @@
+Name: Via Remission
+ID: caa-j9-via-remission
+Author: 'Alcaro, W.'
+Inputs:
+- Molecule:
+    Atoms:
+    - AtomType: copper
+      Position:
+        Pos: 0,0
+    Bonds: []
+    Name: Elemental Copper
+  AmountOverride: 0
+Outputs:
+- Molecule:
+    Atoms:
+    - AtomType: gold
+      Position:
+        Pos: 0,0
+    Bonds: []
+    Name: Elemental Gold
+  AmountOverride: 0
+OutputMultiplier: 1
+PermissionFlags: CoreTools
+CustomPermissions:
+- HalvingMetallurgy:remission
+- ReductiveMetallurgy:deposition
+Highlights: []
+ProductionInfo: 
+Conduits: 
+Payloads: 
